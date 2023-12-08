@@ -69,7 +69,7 @@ elif task == "Tumor Detection":
 
     if uploaded_file is not None:
         # Load the tumor detection model
-        model = load_model("D:\STUDY\S3\DEEP LEARNING\comb\cnn.pkl")
+        model = load_model("CN.keras")
         st.image(uploaded_file, caption="Uploaded Image.", use_column_width=False, width=200)
         st.write("")
 
