@@ -46,11 +46,9 @@ if task == "Sentiment Classification":
 
         # Load models dynamically based on the selected option
         if model_option == "Perceptron":
-            with open('PP.pkl', 'rb') as file:
-                model = pickle.load(file)
+            model = load_model("PP.pkl")
         elif model_option == "Backpropagation":
-            with open('BP.pkl', 'rb') as file:
-                model = pickle.load(file)
+            model = load_model("BP.pkl")
         elif model_option == "DNN":
             model = load_model('DP.keras')
         elif model_option == "RNN":
